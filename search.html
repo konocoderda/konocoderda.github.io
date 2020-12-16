@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<html>
+	<style>
+	  .red-text {
+	    color: red;
+	  }
+	
+	  h2 {
+	    font-family: Lobster, monospace;
+		font-size: -webkit-xxx-large;
+	  }
+	
+	  p {
+	    font-size: 16px;
+	    font-family:Lobster,monospace;
+	  }
+	  main{
+		  text-align: center;
+	  }
+	  html{
+		  background-image: url(http://s3.sinaimg.cn/orignal/4b93ff8294d2ecd7901d2);
+		  background-size: cover;
+	  }
+	</style>
+	<title>狗狗照片搜索</title>
+	<main>
+		<h2 class="red-text">DogPhotoApp</h2><p>Find the beauties around you!</p>
+		<form action="/submit-dog-photo">
+		  <label><input type="radio" name="indoor-outdoor">室内</label>
+		  <label><input type="radio" name="indoor-outdoor">室外</label><br>
+		  <label><input type="checkbox" name="personality">可爱</label>
+		  <label><input type="checkbox" name="personality">活泼</label>
+		  <label><input type="checkbox" name="personality">忠诚</label><br>
+		  <input type="text" placeholder="搜索狗狗图片" required>
+		  <button type="submit">搜索</button>
+		</form>
+	</main>
+</html>
